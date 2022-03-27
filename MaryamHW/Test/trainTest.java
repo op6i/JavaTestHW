@@ -49,6 +49,36 @@ public class trainTest {
         int actual= t.trainCost("16:00");
         assertEquals('F',actual);
     }
+    @Test
+    public  void inNine (){
+        int actual= t.trainCost("09:29");
+        assertEquals('F',actual);
+    }
+    @Test
+    public  void inNine2 (){
+        int actual= t.trainCost("09:31");
+        assertEquals('F',actual);
+    }
+    @Test
+    public  void infour (){
+        int actual= t.trainCost("15:59");
+        assertEquals('S',actual);
+    }
+    @Test
+    public  void infour2 (){
+        int actual= t.trainCost("16:01");
+        assertEquals('F',actual);
+    }
+    @Test
+    public  void inSeven (){
+        int actual= t.trainCost("19:29");
+        assertEquals('S',actual);
+    }
+    @Test
+    public  void inSeven2 (){
+        int actual= t.trainCost("19:31");
+        assertEquals('F',actual);
+    }
     @After
     public void tearDown()  {
 

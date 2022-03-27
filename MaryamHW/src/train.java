@@ -17,11 +17,6 @@ public class train {
     //F=full fare
     //n= invalid input
     public char trainCost (String time){
-        // create a LocalTime Objects
-//        String f="09:30";
-       // LocalTime nine = LocalTime.parse("9:30",DateTimeFormatter.ofPattern("MM:HH", Locale.ENGLISH));
-//        LocalTime nine = LocalTime.parse(f);
-
         try {
             String four = "16:00";
             String seven = "19:30";
@@ -37,7 +32,6 @@ public class train {
             else return 'F';
         }
         catch (Exception e){
-//            System.out.println("hi"+nine);
             return 'n';
         }
         }}
