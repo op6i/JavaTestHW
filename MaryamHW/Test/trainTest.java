@@ -14,7 +14,7 @@ public class trainTest {
     public void setUp()  {
         t=new train();
     }
-    @Test
+    @Test 
     public  void notTime (){
         int actual= t.trainCost("ma");
         assertEquals('n',actual);
@@ -57,7 +57,7 @@ public class trainTest {
     @Test
     public  void inNine2 (){
         int actual= t.trainCost("09:31");
-        assertEquals('F',actual);
+        assertEquals('S',actual);
     }
     @Test
     public  void infour (){
@@ -71,7 +71,7 @@ public class trainTest {
     }
     @Test
     public  void inSeven (){
-        int actual= t.trainCost("19:29");
+        int actual= t.trainCost( "19:29");
         assertEquals('S',actual);
     }
     @Test
